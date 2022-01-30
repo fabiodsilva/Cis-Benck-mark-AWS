@@ -9,11 +9,6 @@ What this Template does:
      * Check users without MFA
 
 
-Obs: This is a update from old version     
-     URL: https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/template?stackName=Compliance-CIS-Benchmark&templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-compliance-cis-benchmark/templates/main.template
- 
-
-
 Cis-Benchmark on AWS using Cloudformation.
 
 
@@ -45,3 +40,6 @@ Cis-Benchmark on AWS using Cloudformation.
 
 
 
+
+## Obs: This is a update from old version     
+     URL: https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/template?stackName=Compliance-CIS-Benchmark&templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-compliance-cis-benchmark/templates/main.template
