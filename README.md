@@ -3,10 +3,11 @@ Apply CIS Benckmark on AWS
 
 What this Template does:
 
-     * Check Root Account was used;
-     * Check root account has MFA;
+     * Check Root Activity;
      * Check Console Login Failures;
-     * Check users without MFA
+     * Check Console Signin Without MFA
+     * Check KMS Key Disabled or Scheduled for Deletion
+     * Unauthorized Activity Attempt
 
 
 Cis-Benchmark on AWS using Cloudformation.
