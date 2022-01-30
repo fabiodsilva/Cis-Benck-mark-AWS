@@ -24,7 +24,8 @@ Cis-Benchmark on AWS using Cloudformation.
 2 - Create a Bucket S3, and apply "Static website hosting".
 
 3 - And now apply the follow policy to allow read-only access
-    ```
+
+```
     {
         "Version": "2012-10-17",
         "Statement": [
@@ -40,7 +41,7 @@ Cis-Benchmark on AWS using Cloudformation.
             }
         ]
     }
-    ```
+```
 
 
 
