@@ -17,9 +17,11 @@ Cis-Benchmark on AWS using Cloudformation.
 
 1 - A e-mail where the alarm will be send.
 
-2 - Create a Bucket S3, and apply "Static website hosting".
+2 - Create a new Bucket S3, and apply "Static website hosting".
 
-3 - And now apply the follow policy to allow read-only access
+3 - Disable "Block all public access"
+
+4 - And now apply the follow policy to allow read-only access
 
 ```
     {
@@ -33,7 +35,7 @@ Cis-Benchmark on AWS using Cloudformation.
                     "s3:GetObject",
                     "s3:GetObjectVersion"
                 ],
-                "Resource": "arn:aws:s3:::YOUR-BUCKET-S3/*"
+                "Resource": "arn:aws:s3:::YOUR-NEW-BUCKET-S3/*"
             }
         ]
     }
