@@ -1,25 +1,30 @@
 # Cis-Benck-mark-AWS
-Apply CIS Benck-mark on AWS
+Apply CIS Benckmark on AWS
 
-Obs: 
-This is update from old version 
- URL: https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/template?stackName=Compliance-CIS-Benchmark&templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-compliance-cis-benchmark/templates/main.template
+What this Template does:
+
+     * Check Root Account was used;
+     * Check root account has MFA;
+     * Check Console Login Failures;
+     * Check users without MFA
+
+
+Obs: This is a update from old version     
+     URL: https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/template?stackName=Compliance-CIS-Benchmark&templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-compliance-cis-benchmark/templates/main.template
  
-update from python 2.7 to python 3.8.
 
 
 Cis-Benchmark on AWS using Cloudformation.
 
 
+Requisites
 
-pré-requisitos 
+A e-mail where the alarm will be send.
 
-O bucket de origem do scritps devem está com a função "Static website hosting" enabled.
+Create a Bucket S3, and apply "Static website hosting".
 
-E com a policy abaico aplicada para permitir apenas acesso read only.
-
-----------------------------------------------------------------------------
-
+And now apply the follow policy to allow read-only access
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -31,15 +36,11 @@ E com a policy abaico aplicada para permitir apenas acesso read only.
                 "s3:GetObject",
                 "s3:GetObjectVersion"
             ],
-            "Resource": "arn:aws:s3:::aws-quickstart-luckie-tech/*"
+            "Resource": "arn:aws:s3:::YOUR-BUCKET-S3/*"
         }
     ]
 }
+```
 
---------------------------------------------------------------------------
 
 
-AWS CIS-Benck-mark
-
-Check Root Account was used
-Check root account has mfa
