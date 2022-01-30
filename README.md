@@ -1,4 +1,4 @@
-# Cis-Benck-mark-AWS
+# Cis-Benckmark-AWS
 Apply CIS Benckmark on AWS
 
 What this Template does:
