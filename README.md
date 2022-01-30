@@ -1,11 +1,16 @@
 # Cis-Benck-mark-AWS
 Apply CIS Benck-mark on AWS
 
+Obs: 
+This is update from old version 
+ URL: https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/template?stackName=Compliance-CIS-Benchmark&templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-compliance-cis-benchmark/templates/main.template
+ 
+update from python 2.7 to python 3.8.
 
 
-Instalação do Cis-Bench-mark na nuvem AWS usando cloudformation.
+Cis-Benchmark on AWS using Cloudformation.
 
-Atualizado pra python 3.8
+
 
 pré-requisitos 
 
